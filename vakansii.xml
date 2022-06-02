@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type = "text/xsl" href = "vakansii.xsl"?>
+<catalog>
+  <cd>
+    <title>Грузчик</title>
+    <artist>700р</artist>
+    
+  </cd>
+  <cd>
+    <title>Доставщик</title>
+    <artist>600р</artist>
+    
+  </cd>
+  <cd>
+    <title>Менеджер</title>
+    <artist>1000р</artist>
+    
+  </cd>
+  <cd>
+    <title>Водитель</title>
+    <artist>800р</artist>
+    
+  </cd>
+  <cd>
+    <title>Оператор</title>
+    <artist>800р</artist>
+    
+  </cd>
+</catalog>
+

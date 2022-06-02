@@ -1,0 +1,381 @@
+body { 
+    display: grid;
+    grid-template-areas: 
+      "nav "
+      "header "
+      "main"
+      "article"
+      "footer ";
+    grid-template-rows: 7% 12% 80% 80% 7%;
+    grid-template-columns: 1fr;
+    grid-gap: 1px;
+    height: 100vh;
+    margin: 0;
+    background-color: #594D46;
+    }
+  header, footer, article, nav, main, aside {
+    padding: 20px;
+    background: #EFEFEF;
+  }
+  #mainHeader {
+    grid-area: header;
+  }
+  #mainArticle{
+      grid-area:article;
+  }
+  #mainFooter {
+    grid-area: footer;
+  }
+  #mainNav { 
+    grid-area: nav; 
+    }
+  #mainMain { 
+    grid-area: main; 
+    }
+
+    .imgscale {
+        position: relative;
+        left: 4%;
+        top:2%;
+        margin-bottom: 3%;
+        margin-left:4%;
+        margin-right:4% ;
+      }
+      .imgscale img {
+        transition: 1s;  
+        position: relative;
+      }
+      .imgscale img:hover {
+        transform: scale(2.1); 
+      }
+
+      .imagg{
+          position: relative;
+          left: 32%;
+          width: 550px; 
+          height: 350px;
+          margin:3%;
+      }
+
+      #cin{
+        position: absolute;
+        top: 57%;
+        right: 36%;
+        color: #080706;
+        transform: translate(-50%, -50%);
+        background-color:#EFEFEF ;
+        text-align: center;
+      }
+      #cin a{
+        color: #080706;
+        display: inline-block;
+        text-decoration: none;
+        width: 90px;
+        border: 2px ridge #D1B280;
+        }
+        #cin a:hover {
+        background-color:#D1B280 ;
+        border-radius: 9%;
+        }
+
+        h1, h2, h3, p{
+          font-family: 'Lora', serif;
+          color: #080706;
+        }
+      
+      h1{
+        color: #080706;
+        text-align: center;
+      }
+      h4{
+        color: #D1B280;
+        text-align: center;
+        font-size: 150%;
+      }
+      p{
+        color: #080706;
+        text-align: center;
+        font-size: 120%;
+      }
+
+
+      .grid { 
+        display: grid;
+        grid-template-rows: 200px 200px ;
+        grid-template-columns: 50% 40% 10% ;
+        grid-gap: 10px;
+        }
+      .grid > div {
+        font-size: 24px;
+        text-align: center;
+      }
+
+
+      .tope1{
+        position: absolute;
+        top: 50%;
+        border:1px solid;
+        left: 50%;
+        right: 30%;
+      }
+      .tope{
+        position: absolute;
+        top: 52%;
+        right: 15%;
+      }
+      .tope a{
+        color: #080706;
+        display: inline-block;
+        text-decoration: none;
+        border: 2px ridge #D1B280;
+      }
+      .tope a:hover{
+        background-color:#D1B280 ;
+        border-radius: 9%;
+      }
+      .topy{
+        position: absolute;
+        top: 130%;
+        right: 15%;
+      }
+      .topy a{
+        color: #080706;
+        display: inline-block;
+        text-decoration: none;
+        border: 2px ridge #D1B280;
+      }
+      .topy a:hover{
+        background-color:#D1B280 ;
+        border-radius: 9%;
+      }
+      .topy1{
+        border:1px solid;
+        position: absolute;
+        top: 130%;
+        left: 50%;
+        right: 30%;
+      }
+    
+
+      #yxired{
+        width: 870px;
+        height: 610px;
+      }
+
+      @media screen and (max-width: 540px){
+        body { 
+          display: grid;
+          grid-template-areas: 
+            "nav "
+            "header "
+            "main"
+            "article"
+            "footer ";
+          grid-template-rows: 58% 20% 130% 160% 7%;
+          grid-template-columns: 490px;
+          grid-gap: 1px;
+          height: 100vh;
+          margin: 0;
+          background-color: #594D46;
+          }
+          ul.nav { list-style-type:none ; }
+          ul.nav a { display: block; }
+          
+          #navbar{
+            margin: 0px;
+            padding: 0px;
+            list-style-type: disc;
+            border-radius: 1px 1px;
+            width: 50%;
+            text-align: center;
+            background-color: #EFEFEF;
+          }
+          #navbar li {display: inline;}
+          #navbar a{
+            color: #080706;
+            display: inline-block;
+            text-decoration: none;
+            width: 500px;
+            border:2px solid #594D46;
+            font-size: 30px;
+            padding: 5%;
+          }
+          #navbar a:hover {
+            border-radius: 10px 10px;
+            background-color:#D1B280;
+          }
+          #yxired{
+            width: 300px;
+            height: 300px;
+          }
+          #yxiblack{
+            width:300px;
+          }
+          .tope1{
+            position: absolute;
+            top: 120%;
+            width: 50%;
+            padding: 5%;
+          }
+          .tope{
+            position: absolute;
+            top: 175%;
+            right: 7%;
+          }
+          .tope a{
+            color: #080706;
+            display: inline-block;
+            text-decoration: none;
+            border: 2px ridge #D1B280;
+          }
+          .tope a:hover{
+            background-color:#D1B280 ;
+            border-radius: 9%;
+          }
+          .topy{
+            position: absolute;
+            top: 335%;
+            right: 7%;
+          }
+          .topy a{
+            color: #080706;
+            display: inline-block;
+            text-decoration: none;
+            border: 2px ridge #D1B280;
+          }
+          .topy a:hover{
+            background-color:#D1B280 ;
+            border-radius: 9%;
+          }
+          .topy1{
+            border:1px solid;
+            position: absolute;
+            top: 255%;
+            left: 50%;
+            right: 30%;
+            width: 50%;
+            padding: 7%;
+          }
+      }
+
+      @media screen
+      and (min-device-width: 768px)
+      and (max-device-width: 1023px){
+        body { 
+          display: grid;
+          grid-template-areas: 
+            "nav "
+            "header "
+            "main"
+            "article"
+            "footer ";
+          grid-template-rows: 12% 12% 80% 80% 7%;
+          grid-template-columns: 900px;
+          grid-gap: 1px;
+          height: 100vh;
+          margin: 0;
+          background-color: #594D46;
+          }
+          #yxired{
+            width: 400px;
+            height: 450px;
+          }
+          #yxiblack{
+            width:400px;
+          }
+          .tope1{
+            position: absolute;
+            top: 40%;
+            width: 40%;
+            padding: 5%;
+            left:55%;
+          }
+          .tope{
+            position: absolute;
+            top: 75%;
+            right: 3%;
+          }
+          
+          .topy{
+            position: absolute;
+            top: 157%;
+            right: 3%;
+          }
+          
+          .topy1{
+            border:1px solid;
+            position: absolute;
+            top: 115%;
+            left: 45%;
+            right: 60%;
+            width: 50%;
+            padding: 7%;
+        }
+      }
+
+      @media screen
+      and (min-device-width: 1024px)
+      and (max-device-width: 1280px){
+        body { 
+          display: grid;
+          grid-template-areas: 
+            "nav "
+            "header "
+            "main"
+            "article"
+            "footer ";
+          grid-template-rows: 7% 12% 90% 90% 7%;
+          grid-template-columns: 1fr;
+          grid-gap: 1px;
+          height: 100vh;
+          margin: 0;
+          background-color: #594D46;
+          }
+          .tope1{
+            position: absolute;
+            top: 50%;
+            border:1px solid;
+            left: 60%;
+            right: 10%;
+          }
+          .tope{
+            position: absolute;
+            top: 79%;
+            right: 20%;
+          }
+          .tope a{
+            color: #080706;
+            display: inline-block;
+            text-decoration: none;
+            border: 2px ridge #D1B280;
+          }
+          .tope a:hover{
+            background-color:#D1B280 ;
+            border-radius: 9%;
+          }
+          .topy{
+            position: absolute;
+            top: 160%;
+            right: 20%;
+          }
+          .topy a{
+            color: #080706;
+            display: inline-block;
+            text-decoration: none;
+            border: 2px ridge #D1B280;
+          }
+          .topy a:hover{
+            background-color:#D1B280 ;
+            border-radius: 9%;
+          }
+          .topy1{
+            border:1px solid;
+            position: absolute;
+            top: 130%;
+            left: 60%;
+            right: 10%;
+          }
+          #yxired{
+            width:120%;
+          }
+      }

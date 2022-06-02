@@ -1,0 +1,472 @@
+body { 
+    display: grid;
+    grid-template-areas: 
+      "nav "
+      "header"
+      "main"
+      "footer";
+    grid-template-rows: 7% 12% 74% 7%;
+    grid-template-columns:1fr ;
+    grid-gap: 3px;
+    height: 100vh;
+    margin: 0;
+    background-color: #594D46;
+}
+header, footer, article, nav, main {
+    padding: 20px;
+    background: #EFEFEF;
+}
+#mainHeader{
+    grid-area: header;
+}
+#mainFooter {
+    grid-area: footer;
+}
+#mainNav { 
+    grid-area: nav; 
+}
+#mainMain { 
+    grid-area: main; 
+}
+
+h1, h2, h3, p{
+        font-family: 'Lora', serif;
+        color:#080706;
+        text-align: center;
+}
+
+.maincat{
+        position: relative;
+    }
+    .catalog__content {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+    }
+    .catalog__content > div {
+            -webkit-box-flex: 5;
+                -ms-flex: 5;
+                    flex: 5;
+    }
+    .catalog{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: space-evenly;
+                -ms-flex-pack: space-evenly;
+                    justify-content: space-evenly;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+    }
+    
+    #audiosis{
+        position: absolute;
+        left: 22%;
+        top:40%;
+}
+#naysh{
+        position: absolute;
+        left: 47.6%;
+        top:40%;
+        
+}
+#noyt{
+        position: absolute;
+        right: 35.3%;
+        top:78%;
+}
+#televiz{
+        position: absolute;
+        left: 34.2%;
+        top:78%;
+}
+#telefon{
+        position: absolute;
+        right: 22.6%;
+        top:40%;
+}
+
+.laptop{
+        display: block; 
+        width:200px;
+        height:200px;  
+        position: absolute;
+        right: 32%;
+        top:50%;
+        background: url(file:///D:/учёба/Курсовой%20проект/kyrsach/img/lapa.jpg);
+}
+.laptop:hover {
+        background: url(file:///D:/учёба/Курсовой%20проект/kyrsach/img/laphover.jpg);
+}
+
+.telef{
+        display: block; 
+        width:200px;
+        height:200px; 
+        position: absolute;
+        right: 20%;
+        top:10%;
+        background: url(file:///D:/учёба/Курсовой%20проект/kyrsach/img/tela.jpg);
+}
+.telef:hover {
+        background: url(file:///D:/учёба/Курсовой%20проект/kyrsach/img/telhover.jpg);
+}
+
+.airph{
+        display: block; 
+        width:200px;
+        height:200px; 
+        position: absolute;
+        left:45%;
+        top:10%;
+        background: url(file:///D:/учёба/Курсовой%20проект/kyrsach/img/iar.jpg);
+}
+.airph:hover {
+        background: url(file:///D:/учёба/Курсовой%20проект/kyrsach/img/iarhover.jpg);
+}
+
+.telik{
+        display: block; 
+        width:200px;
+        height:200px;  
+        position: absolute;
+        left:32%;
+        top:50%;
+        background: url(file:///D:/учёба/Курсовой%20проект/kyrsach/img/teliv.jpg);
+}
+.telik:hover {
+        background: url(file:///D:/учёба/Курсовой%20проект/kyrsach/img/telivhover.jpg);
+}
+
+.aud{
+        display: block; 
+        width:200px;
+        height:200px;  
+        position: absolute;
+        left:20%;
+        top:11.5%;
+        background: url(file:///D:/учёба/Курсовой%20проект/kyrsach/img/kolona.jpg);
+}
+.aud:hover {
+        background: url(file:///D:/учёба/Курсовой%20проект/kyrsach/img/kolonhover.jpg);
+}
+
+
+
+@media screen and (max-width: 540px){
+        #aud{
+                position: absolute;
+                top:2%;
+        }
+        #air{
+                position: absolute;
+                top:20%;
+                left: 25%;
+        }
+        #lapt{
+                position: absolute;
+                top:38%;
+        }
+        #teik{
+                position: absolute;
+                top:56%;
+                left: 25%;
+        }
+        #tlph{
+                position: absolute;
+                top:74%;
+                left: 25%;
+        }
+        #audiosis{
+                position: absolute;
+                left: 33.5%;
+                top:16%;
+        }
+        #naysh{
+                position: absolute;
+                left: 37.5%;
+                top:34%;
+                
+        }
+        #noyt{
+                position: absolute;
+                right: 41.7%;
+                top:52%;
+        }
+        #televiz{
+                position: absolute;
+                right: 37.2%;
+                top:69%;
+        }
+        #telefon{
+                position: absolute;
+                right: 39.5%;
+                top:89%;
+        }
+        body { 
+                display: grid;
+                grid-template-areas: 
+                  "nav "
+                  "header "
+                  "main"
+                  "footer";
+                grid-template-rows: 52% 20% 200% 3%;
+                grid-template-columns:440px ;
+                grid-gap: 1px;
+                height: 100vh;
+                margin: 0;
+                background-color: #594D46;
+              }
+              header, footer, article, nav, main {
+                padding: 2px;
+                background: #EFEFEF;
+              }
+              #mainHeader {
+                grid-area: header;
+              }
+              #mainFooter {
+                grid-area: footer;
+              }      
+              #mainNav { 
+                grid-area: nav; 
+              }
+              #mainMain { 
+                grid-area: main; 
+              }
+              .layer1 {
+                float: none;
+                margin-left:15%; 
+              }
+              .layer2 {
+                float: none; 
+                margin-right:10%;
+                margin-left: 2%;;
+              }
+              
+              
+              ul.nav { list-style-type:none ; }
+              ul.nav a { display: block; }
+              
+              #navbar{
+                margin: 0px;
+                padding: 0px;
+                list-style-type: disc;
+                border-radius: 1px 1px;
+                width: 50%;
+                text-align: center;
+                background-color: #EFEFEF;
+              }
+              #navbar li {display: inline;}
+              #navbar a{
+                color: #080706;
+                display: inline-block;
+                text-decoration: none;
+                width: 500px;
+                border:2px solid #594D46;
+                font-size: 30px;
+                padding: 5%;
+              }
+              #navbar a:hover {
+                border-radius: 10px 10px;
+                background-color:#D1B280;
+              }
+              .wid{
+                position:absolute;
+              
+              }
+}
+
+@media screen
+and (min-device-width: 768px)
+and (max-device-width: 1023px){
+        body { 
+                display: grid;
+                grid-template-areas: 
+                  "nav "
+                  "header"
+                  "main"
+                  "footer";
+                grid-template-rows: 10% 12% 74% 7%;
+                grid-template-columns:1fr ;
+                grid-gap: 3px;
+                height: 100vh;
+                margin: 0;
+                background-color: #594D46;
+            }
+        #audiosis{
+                position: absolute;
+                left: 10.5%;
+                top:36%;
+        }
+        #naysh{
+                position: absolute;
+                left: 46%;
+                top:36%;
+                
+        }
+        #noyt{
+                position: absolute;
+                right: 30.7%;
+                top:72%;
+        }
+        #televiz{
+                position: absolute;
+                left: 26.2%;
+                top:72%;
+        }
+        #telefon{
+                position: absolute;
+                right: 13.5%;
+                top:36%;
+        }
+        .laptop{
+                display: block; 
+                width:200px;
+                height:200px;  
+                position: absolute;
+                right: 22%;
+                top:50%;
+                background: url(file:///D:/учёба/Курсовой%20проект/курсач/сайт/img/lapa.jpg);
+        }
+        .telef{
+                display: block; 
+                width:200px;
+                height:200px; 
+                position: absolute;
+                right: 7%;
+                top:10%;
+                background: url(file:///D:/учёба/Курсовой%20проект/курсач/сайт/img/tela.jpg);
+        }
+       
+        
+        .airph{
+                display: block; 
+                width:200px;
+                height:200px; 
+                position: absolute;
+                left:40%;
+                top:10%;
+                background: url(file:///D:/учёба/Курсовой%20проект/курсач/сайт/img/iar.jpg);
+        }
+       
+        
+        .telik{
+                display: block; 
+                width:200px;
+                height:200px;  
+                position: absolute;
+                left:22%;
+                top:50%;
+                background: url(file:///D:/учёба/Курсовой%20проект/курсач/сайт/img/teliv.jpg);
+        }
+        
+        
+        .aud{
+                display: block; 
+                width:200px;
+                height:200px;  
+                position: absolute;
+                left:7%;
+                top:11.5%;
+                background: url(file:///D:/учёба/Курсовой%20проект/курсач/сайт/img/kolona.jpg);
+        }
+        
+}
+
+@media screen
+and (min-device-width: 1024px)
+and (max-device-width: 1280px){
+        body { 
+                display: grid;
+                grid-template-areas: 
+                  "nav "
+                  "header"
+                  "main"
+                  "footer";
+                grid-template-rows: 14% 16% 90% 7%;
+                grid-template-columns:1fr ;
+                grid-gap: 3px;
+                height: 100vh;
+                margin: 0;
+                background-color: #594D46;
+            }
+            #audiosis{
+                position: absolute;
+                left: 10.5%;
+                top:44%;
+        }
+        #naysh{
+                position: absolute;
+                left: 46%;
+                top:44%;
+                
+        }
+        #noyt{
+                position: absolute;
+                right: 27.7%;
+                top:82%;
+        }
+        #televiz{
+                position: absolute;
+                left: 26.2%;
+                top:82%;
+        }
+        #telefon{
+                position: absolute;
+                right: 13.5%;
+                top:44%;
+        }
+        .laptop{
+                display: block; 
+                width:200px;
+                height:200px;  
+                position: absolute;
+                right: 22%;
+                top:50%;
+                background: url(file:///D:/учёба/Курсовой%20проект/курсач/сайт/img/lapa.jpg);
+        }
+        .telef{
+                display: block; 
+                width:200px;
+                height:200px; 
+                position: absolute;
+                right: 7%;
+                top:10%;
+                background: url(file:///D:/учёба/Курсовой%20проект/курсач/сайт/img/tela.jpg);
+        }
+       
+        
+        .airph{
+                display: block; 
+                width:200px;
+                height:200px; 
+                position: absolute;
+                left:40%;
+                top:10%;
+                background: url(file:///D:/учёба/Курсовой%20проект/курсач/сайт/img/iar.jpg);
+        }
+       
+        
+        .telik{
+                display: block; 
+                width:200px;
+                height:200px;  
+                position: absolute;
+                left:22%;
+                top:50%;
+                background: url(file:///D:/учёба/Курсовой%20проект/курсач/сайт/img/teliv.jpg);
+        }
+        
+        
+        .aud{
+                display: block; 
+                width:200px;
+                height:200px;  
+                position: absolute;
+                left:7%;
+                top:11.5%;
+                background: url(file:///D:/учёба/Курсовой%20проект/курсач/сайт/img/kolona.jpg);
+        }
+        
+}

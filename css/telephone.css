@@ -1,0 +1,242 @@
+body { 
+    display: grid;
+    grid-template-areas: 
+      "nav "
+      "header "
+      "main"
+      "footer ";
+    grid-template-rows: 7% 12%  100% 1%;
+    grid-template-columns: 1fr;
+    grid-gap: 1px;
+    height: 100vh;
+    margin: 0;
+    background-color: #594D46;
+    }
+  header, footer, article, nav, main, aside {
+    padding: 20px;
+    background: #EFEFEF;
+  }
+  #mainHeader {
+    grid-area: header;
+  }
+  #mainFooter {
+    grid-area: footer;
+  }
+  #mainNav { 
+    grid-area: nav; 
+    }
+  #mainMain { 
+    grid-area: main; 
+    }
+
+    
+
+    h1, h2, h3, p{
+      font-family: 'Lora', serif;
+      color: #080706;
+    }
+      
+      h1{
+        color: #080706;
+        text-align: center;
+      }
+      h4{
+        color: #D1B280;
+        text-align: center;
+        font-size: 150%;
+      }
+      p{
+        color: #080706;
+        text-align: center;
+        font-size: 120%;
+      }
+
+
+      .grid { 
+        display: grid;
+        grid-template-rows: 200px  ;
+        grid-template-columns: 50% 40% 10% ;
+        grid-gap: 10px;
+        }
+      .grid > div {
+        font-size: 24px;
+        text-align: center;
+      }
+
+
+      .tope1{
+        position: absolute;
+        top: 50%;
+        border:1px solid;
+        left: 50%;
+        right: 30%;
+      }
+      .tope{
+        position: absolute;
+        top: 52%;
+        right: 15%;
+      }
+      .tope a{
+        color: #080706;
+        display: inline-block;
+        text-decoration: none;
+        border: 2px ridge #D1B280;
+      }
+      .tope a:hover{
+        background-color:#D1B280 ;
+        border-radius: 9%;
+      }
+      #hmg{
+          margin-top: 20%;
+          width: 500px;
+          height: 500px;
+      }
+      
+      
+      @media screen and (max-width: 540px){
+        body { 
+          display: grid;
+          grid-template-areas: 
+            "nav "
+            "header "
+            "main"
+            "footer ";
+          grid-template-rows: 58% 20% 260% 7%;
+          grid-template-columns: 490px;
+          grid-gap: 1px;
+          height: 100vh;
+          margin: 0;
+          background-color: #594D46;
+          }
+          ul.nav { list-style-type:none ; }
+          ul.nav a { display: block; }
+          
+          #navbar{
+            margin: 0px;
+            padding: 0px;
+            list-style-type: disc;
+            border-radius: 1px 1px;
+            width: 50%;
+            text-align: center;
+            background-color: #EFEFEF;
+          }
+          #navbar li {display: inline;}
+          #navbar a{
+            color: #080706;
+            display: inline-block;
+            text-decoration: none;
+            width: 500px;
+            border:2px solid #594D46;
+            font-size: 30px;
+            padding: 5%;
+          }
+          #navbar a:hover {
+            border-radius: 10px 10px;
+            background-color:#D1B280;
+          }
+          .tope1{
+            position: absolute;
+            top: 170%;
+            width: 50%;
+            padding: 5%;
+          }
+          .tope{
+            position: absolute;
+            top: 275%;
+            right: 7%;
+          }
+          .tope a{
+            color: #080706;
+            display: inline-block;
+            text-decoration: none;
+            border: 2px ridge #D1B280;
+          }
+          .tope a:hover{
+            background-color:#D1B280 ;
+            border-radius: 9%;
+          }
+      }
+
+      @media screen
+      and (min-device-width: 768px)
+      and (max-device-width: 1023px){
+        .tope1{
+          position: absolute;
+          top: 85%;
+          border:1px solid;
+          left: 50%;
+          right: 30%;
+          width: 30%;
+        }
+        .tope{
+          position: absolute;
+          top: 135%;
+          right: 26%;
+        }
+        .tope a{
+          color: #080706;
+          display: inline-block;
+          text-decoration: none;
+          border: 2px ridge #D1B280;
+        }
+        .tope a:hover{
+          background-color:#D1B280 ;
+          border-radius: 9%;
+        }
+        body { 
+          display: grid;
+          grid-template-areas: 
+            "nav "
+            "header "
+            "main"
+            "footer ";
+          grid-template-rows: 14% 12%  140% 1%;
+          grid-template-columns: 1fr;
+          grid-gap: 1px;
+          height: 100vh;
+          margin: 0;
+          background-color: #594D46;
+          }
+      }
+      
+      @media screen
+      and (min-device-width: 1024px)
+      and (max-device-width: 1280px){
+        body { 
+          display: grid;
+          grid-template-areas: 
+            "nav "
+            "header "
+            "main"
+            "footer ";
+          grid-template-rows: 7% 12% 100% 7%;
+          grid-template-columns: 1fr;
+          grid-gap: 1px;
+          height: 100vh;
+          margin: 0;
+          background-color: #594D46;
+          }
+        .tope1{
+          position: absolute;
+          top: 40%;
+          border:1px solid;
+          left: 50%;
+          right: 30%;
+          width: 30%;
+        }
+        .tope{
+          position: absolute;
+          top: 72%;
+          right: 30%;
+        }
+        .tope a{
+          color: #080706;
+          display: inline-block;
+          text-decoration: none;
+          border: 2px ridge #D1B280;
+        }
+        .tope a:hover{
+          background-color:#D1B280 ;
+          border-radius: 9%;
+        }
+      }

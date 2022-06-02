@@ -1,0 +1,118 @@
+body { 
+    display: grid;
+    grid-template-areas: 
+      "nav "
+      "header "
+      "article"
+      "main"
+      "footer ";
+    grid-template-rows: 7% 12% 50% 210% 7%;
+    grid-template-columns: 1fr;
+    grid-gap: 1px;
+    height: 100vh;
+    margin: 0;
+    background-color: #594D46;
+    }
+  header, footer, article, nav, main, aside {
+    padding: 20px;
+    background: #EFEFEF;
+  }
+  #mainHeader {
+    grid-area: header;
+  }
+  #mainArticle{
+      grid-area:article;
+  }
+  #mainFooter {
+    grid-area: footer;
+  }
+  #mainNav { 
+    grid-area: nav; 
+    }
+  #mainMain { 
+    grid-area: main; 
+    }
+
+    .imgscale {
+        position: relative;
+        left: 4%;
+        top:2%;
+        margin-bottom: 3%;
+        margin-left:8%;
+        margin-right:8% ;
+      }
+      .imgscale img {
+        transition: 1s;  
+        position: relative;
+      }
+      .imgscale img:hover {
+        transform: scale(2.1); 
+      }
+
+      .imgscale1 {
+        position: relative;
+        left: 4%;
+        margin-bottom: 3%;
+        margin-left:8%;
+        margin-right:8% ;
+      }
+      .imgscale1 img {
+        transition: 1s;  
+        position: relative;
+      }
+      .imgscale1 img:hover {
+        transform: scale(2.1); 
+      }
+
+      .imagg{
+          position: relative;
+          left: 32%;
+          width: 550px; 
+          height: 350px;
+          margin:3%;
+      }
+
+      #cin{
+        position: absolute;
+        top: 57%;
+        right: 41%;
+        color: #080706;
+        transform: translate(-50%, -50%);
+        background-color:#EFEFEF ;
+        text-align: center;
+      }
+      #cin a{
+        color: #080706;
+        display: inline-block;
+        text-decoration: none;
+        width: 90px;
+        border: 2px ridge #D1B280;
+        }
+        #cin a:hover {
+        background-color:#D1B280 ;
+        border-radius: 9%;
+        }
+
+        h1, h2, h3, p{
+          font-family: 'Lora', serif;
+          color: #080706;
+        }
+      
+      h1{
+        color: #080706;
+        text-align: center;
+      }
+      h4{
+        color: #080706;
+        text-align: center;
+        font-size: 150%;
+      }
+      p{
+        color: #080706;
+        text-align: center;
+        font-size: 120%;
+        margin-left:8%;
+        margin-right:8%;
+      }
+
+

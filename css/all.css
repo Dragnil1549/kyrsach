@@ -1,0 +1,126 @@
+ul.nav { list-style-type: none; }
+ul.nav a { display: block; }
+
+#navbar{
+margin: 0px;
+padding: 0px;
+list-style-type: disc;
+border-radius: 1px 1px;
+width: 100%;
+text-align: center;
+background-color: #EFEFEF;
+}
+#navbar li {display: inline;}
+#navbar a{
+color: #080706;
+display: inline-block;
+text-decoration: none;
+width: 150px;
+border:2px solid #594D46;
+}
+#navbar a:hover {
+border-radius: 10px 10px;
+background-color:#D1B280 ;
+}
+
+
+
+.layer1 {
+    float: left;
+    margin-left:15%; 
+   }
+   .layer2 {
+    float: left; 
+    margin-right:10%;
+    margin-left: 2%;;
+   }
+   .layer3 {
+    float: left;
+    margin-left:3%; 
+   }
+   
+
+
+.footer__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.footer__content > div {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+}
+.footer__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.foooter{
+    background-color: #594D46 ;
+    text-align: right;
+    position: relative;
+}
+.foooter a{
+    color: #EFEFEF;
+    text-decoration: none;
+}
+.foooter a:hover{
+    color: #D1B280;
+}
+.vka{ 
+    display: block; 
+    width: 24px; 
+    height: 24px; 
+    background: url(file:///D:/учёба/Курсовой%20проект/kyrsach/img/vka.jpg);
+}
+.insta{
+    width: 24px; 
+    display: block; 
+    height: 24px; 
+    background: url(file:///D:/учёба/Курсовой%20проект/kyrsach/img/insta.jpg);
+    
+}
+.insta:hover {
+    background: url(file:///D:/учёба/Курсовой%20проект/kyrsach/img/insthover.jpg);
+}
+.vka:hover {
+    background: url(file:///D:/учёба/Курсовой%20проект/kyrsach/img/vkhover.jpg);
+}
+
+
+.buy{
+    color: #080706;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-color:#EFEFEF ;
+    position: relative;
+    border: 2px ridge #D1B280;
+}
+.buy a{
+    border: 2px ridge #D1B280;
+    text-decoration: none;
+    color: #080706;
+    background-color: #EFEFEF;
+}
+.buy a:hover {
+    background-color:#D1B280 ;
+    border-radius: 9%;
+}
+
+.hea{
+    background-color: #D1B280;
+}
+@media screen and (max-width: 540px){
+    .wid{
+        position:absolute;
+      }
+     
+}

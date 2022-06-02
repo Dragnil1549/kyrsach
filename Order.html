@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+        <title>Order</title>
+        <link rel="stylesheet" href="css/order.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora&family=Radio+Canada:wght@300;400&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        
+
+        <nav  id="mainNav">
+            <div class="layer2"><img src="img/logo1.jpg" width="120px" height="20px"></div>
+            <div class="layer1">
+                <ul id="navbar">
+                    <li><a href="main.html">Главная</a></li>
+                    <li><a href="Catalog.html">Каталог</a></li>
+                    <li><a href="Info.html">Информация</a></li>
+                    <li><a href="Contact.html">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main id="mainMain">
+            <h2 >Заполните форму для заказа</h2>
+            <form>
+                <ul>
+                    <li>
+                      <label for="name">Имя:</label>
+                      <input type="text" id="name" name="user_name">
+                    </li>
+                    <li>
+                        <label for="adres">Адрес:</label>
+                        <input type="text" id="adres" name="user_adres">
+                    </li>
+                    <li>
+                      <label for="mail">E-mail:</label>
+                      <input type="email" id="mail" name="user_mail">
+                    </li>
+                    <li>
+                        <label for="tel">Номер телефона:</label>
+                        <input type="tel" id="tel" name="tel">
+                    </li>
+                    <li>
+                        <label for="item">Способ получения:</label>
+                        <select name="item" type="item"> 
+                            <option>Доставка</option> 
+                            <option>Самовывоз</option> 
+                        </select> 
+                    </li>
+                    <li>
+                        <label for="Order">Способ оплаты:</label>
+                        <select name="sp" type="Order"> 
+                            <option>Картой</option> 
+                            <option>Наличными</option> 
+                            <option>По приложению</option> 
+                        </select> 
+                    </li>
+                    <li>
+                      <label for="msg">Комментарии:</label>
+                      <textarea id="msg" name="user_message"></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Отправить</button>
+                        <button type="left">Отмена</button>
+                      </li>
+                  </ul>
+            </form>
+        </main>
+
+        <footer id="mainFooter" class="foooter">
+            <div class="footer__content ">
+                <div class="wid"></div>
+                <div class="footer__social">
+                    <a href="AboutUS.html">О Нас</a>
+                    <a href="Contact.html">Контакты</a>
+                    <a href="https://vk.com/ia_prosto_hochy_pizzy" class="vka"></a>
+                    <a href="https://www.instagram.com/sebas.domashni" class="insta"></a>
+                </div>
+                <div class="wid"></div>
+            </div>
+        </footer>
+
+    </body>
